@@ -1,6 +1,7 @@
 package dk.tbertelsen.android.castdr;
 
 import com.google.android.gms.cast.CastMediaControlIntent;
+
 import com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
@@ -13,21 +14,21 @@ import dk.tbertelsen.android.castdr.events.MenuEvent;
 import dk.tbertelsen.android.castdr.utils.BusProvider;
 import dk.tbertelsen.android.castdr.utils.Chromecast;
 import dk.tbertelsen.android.castdr.utils.MenuAdapter;
-import dk.tbertelsen.android.castdr.utils.MenuAdapter.MainActivityMenuItem;
 import dk.tbertelsen.android.drcast.R;
 
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.MediaRouteActionProvider;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ListView;
+
 import android.support.v4.view.MenuItemCompat;
 import android.support.v4.widget.DrawerLayout;
+
+import android.os.Bundle;
+
+import android.util.Log;
+
+import android.view.Menu;
+import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity implements
 		NavigationDrawerFragment.NavigationDrawerCallbacks {
@@ -190,16 +191,5 @@ public class MainActivity extends ActionBarActivity implements
 	protected void onStop() {
 		mChromecast.removeCallback();
 		super.onStop();
-	}
-
-	/* The click listner for ListView in the navigation drawer */
-	private class DrawerItemClickListener implements
-			ListView.OnItemClickListener {
-		@Override
-		public void onItemClick(AdapterView<?> parent, View view, int position,
-				long id) {
-			MainActivityMenuItem item = mMenuAdapter.getItem(position);
-			// ChangeFragment(new FragmentEvent(item.id, item.bundle));
-		}
 	}
 }
