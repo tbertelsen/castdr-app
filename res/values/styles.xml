@@ -1,0 +1,94 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    
+    
+    
+    
+    
+    
+    
+    
+	<style name="root">	
+		<item name="android:layout_width">fill_parent</item>
+		<item name="android:layout_height">fill_parent</item>
+		
+		<item name="android:background">#FFfafbfc</item>
+      	<item name="android:colorBackground">#FFfafbfc</item>
+	</style>
+	<style name="root.list">
+	    <item name="android:listSelector">@android:color/transparent</item>
+		<item name="android:divider">@android:color/transparent</item>
+		<item name="android:dividerHeight">3.0sp</item>
+		<item name="android:layout_marginRight">3.0sp</item>
+		<item name="android:layout_marginLeft">3.0sp</item>
+	</style>
+	
+	
+	<style name="root.media" parent="root">
+		<item name="android:background">#FF000000</item>
+      	<item name="android:colorBackground">#FF000000</item>
+	</style>	
+	
+	<style name="text">
+		<item name="android:textColor">#FF000000</item>
+		<item name="android:textColorLink">#0c58a4</item>
+	</style>
+	<style name="text.Spinner.Item" parent="@style/text">
+		<item name="android:textColor">#FF000000</item>
+		<item name="android:textColorLink">#0c58a4</item>
+	</style>
+	<style name="TextView" parent="@style/text">
+	    <item name="android:layout_margin">1.0sp</item>
+	</style>
+	<style name="TextView.help" parent="@style/TextView">
+	    <item name="android:paddingBottom">10sp</item>
+	</style>
+	<style name="EditText" parent="@style/text">
+	    <item name="android:background">@drawable/edittext</item>
+	    <item name="android:layout_margin">1.0sp</item>
+	    <item name="android:textColorHint">#FFFFB84D</item>
+	  <!--	<item name="android:textCursorDrawable">@null</item> -->
+	</style>
+	<style name="CheckBox" parent="@style/text">
+	</style>
+	<style name="Button" parent="@style/text">
+	    <item name="android:background">@drawable/button</item>
+	    <item name="android:layout_margin">1.0sp</item>
+	</style>
+	<style name="text.new" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">#FFFFFF00</item>
+		<item name="android:textStyle">bold</item>
+	</style>
+	<style name="text.username" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">#FF009de0</item>
+	</style>
+	<style name="text.tiny" parent="@android:style/TextAppearance.Small">
+		<item name="android:textColor">#FF000000</item>
+		<item name="android:textSize">8sp</item>
+	</style>
+	<style name="text.large" parent="@android:style/TextAppearance.Large">
+		<item name="android:textColor">#FF000000</item>
+		<item name="android:textSize">14pt</item>
+	</style>	
+    
+    
+    
+    
+</resources>
